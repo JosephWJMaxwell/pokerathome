@@ -2,14 +2,10 @@ const webpack = require('webpack');
 require('dotenv').config();
 
 module.exports = {
-  webpack: config => {
-    const env = Object.keys(process.env).reduce((acc, curr) => {
-      acc[`process.env.${curr}`] = JSON.stringify(process.env[curr]);
-      return acc;
-    }, {});
-
-    config.plugins.push(new webpack.DefinePlugin(env));
-
-    return config;
+  env: {
+    PUSHER_APP_ID: "1139842",
+    PUSHER_APP_KEY: "80237f4b9125049feb3b",
+    PUSHER_APP_SECRET: "360c3ba6dc9b39ae9945",
+    PUSHER_APP_CLUSTER: "us2"
   }
 };
