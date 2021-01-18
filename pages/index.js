@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
 import Chat from '../components/Chat';
+import PokerTable from '../components/PokerTable';
 
 class IndexPage extends Component {
 
@@ -42,9 +43,9 @@ class IndexPage extends Component {
                 <span className="d-block w-100 h1 text-light" style={{marginTop: -50}}>
                   {
                     user
-                      ? (<span>
-                          <span style={{color: '#999'}}>Hello!</span> {user}
-                        </span>)
+                      ? (
+                        <PokerTable user={user}/>
+                        )
                       : `What is your name?`
                   }
                 </span>
