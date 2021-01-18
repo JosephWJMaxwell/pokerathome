@@ -5,10 +5,10 @@ import { CardGroup, OddsCalculator } from "poker-tools";
 class Board extends Component {
 
   render() {
-    const player1Cards = CardGroup.fromString("JhJs");
-    const player2Cards = CardGroup.fromString("JdQc");
-    const board = CardGroup.fromString("7s9sTs");
-    const board2 = CardGroup.fromString("7s9sTdQs3d");
+    const player1Cards = CardGroup.fromString("JHJS");
+    const player2Cards = CardGroup.fromString("JDQC");
+    const board = CardGroup.fromString("7S9STS");
+    const board2 = CardGroup.fromString("7S9STDQS3D");
     
     var result = OddsCalculator.calculateEquity([player1Cards, player2Cards], board);
     var eq1 = result.equities[0].getEquity();
