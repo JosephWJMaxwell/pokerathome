@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv').config();
 const Sentiment = require('sentiment');
 
-const dev = process.env.NODE_ENV !== 'production';
+const dev = true;
 const port = process.env.PORT || 3000;
 
 const app = next({ dev });

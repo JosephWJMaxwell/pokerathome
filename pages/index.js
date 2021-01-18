@@ -68,6 +68,7 @@ class IndexPage extends Component {
   
 }
 
-export default () => (
+const App = () => (
   <IndexPage />
 );
+export default App;
