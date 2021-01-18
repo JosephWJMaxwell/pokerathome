@@ -14,7 +14,8 @@ class Chat extends Component {
   componentDidMount() {
     this.pusher = new Pusher(process.env.PUSHER_APP_KEY, {
       cluster: process.env.PUSHER_APP_CLUSTER,
-      encrypted: true
+      encrypted: true,
+      authEndpoint: 'https://poker-at-home-static-skrrv.ondigitalocean.app/'
     });
 
     this.channel = this.pusher.subscribe('chat-room');
