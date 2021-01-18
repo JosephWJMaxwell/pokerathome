@@ -30,7 +30,7 @@ class IndexPage extends Component {
     };
     
     return (
-      <Layout pageTitle="Realtime Chat">
+      <Layout pageTitle="Poker At Home">
       
         <main className="container-fluid position-absolute h-100 bg-dark">
         
