@@ -14,9 +14,11 @@ export default function Board(){
 
   return (
     <div>
-        <Image src={board[0]} layout="intrinsic" width="100" height="100"/>
-        <Image src={board[1]} layout="intrinsic" width="100" height="100"/>
-        <Image src={board[2]} layout="intrinsic" width="100" height="100"/>
+      <Image src={board[0]} layout="intrinsic" width="100" height="100"/>
+      <Image src={board[1]} layout="intrinsic" width="100" height="100"/>
+      <Image src={board[2]} layout="intrinsic" width="100" height="100"/>
+  
+      <button></button>
     </div>
   )
 }
