@@ -1,17 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Board from './Dealer/Board';
+import {
+  Container,
+  Row
+} from 'reactstrap';
 
-class PokerTable extends Component {
+export default function (props) {
 
-  render() {
-    return <div>
-        <span>
-            <span style={{color: '#999'}}>Hello!</span> {this.props.user}
-            <Board/>
-        </span>
-    </div>
-  }
-
+  return( 
+    <Container>
+      <Row>
+        <div className="py-3">
+          <span style={{color: '#999'}}>Hello!</span> {props.user}
+        </div>
+      </Row>
+      <Row>
+        <Board/>
+      </Row>
+    </Container>
+  )
 }
-
-export default PokerTable;

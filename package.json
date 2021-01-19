@@ -20,6 +20,7 @@
     "pusher-js": "^7.0.2",
     "react": "0.0.0-8e5adfbd7",
     "react-dom": "0.0.0-8e5adfbd7",
+    "reactstrap": "^8.8.1",
     "sentiment": "^5.0.2"
   }
 }

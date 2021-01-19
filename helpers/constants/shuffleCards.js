@@ -10,7 +10,6 @@ export function shuffleCards() {
       cardDeck.push(card);
     }
   };
-  console.log('shuffling deck');
   let counter = cardDeck.length;
   let t;
   let i;
@@ -21,6 +20,5 @@ export function shuffleCards() {
     cardDeck[counter] = cardDeck[i];
     cardDeck[i] = t;
   }
-  console.log(cardDeck)
   return cardDeck;
 }
